@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowOrder">
+
+
+    <TextView
+        android:id="@+id/textViewShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Order"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewClientNumberTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Number :"
+        app:layout_constraintTop_toBottomOf="@id/textViewShow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="number"
+        android:text=" "
+        app:layout_constraintTop_toTopOf= "@id/textViewClientNumber"
+        app:layout_constraintBottom_toBottomOf="@id/textViewClientNumber"
+        app:layout_constraintLeft_toRightOf="@id/textViewClientNumber"
+        android:textSize="25sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="@id/textViewClientNumber"
+        app:layout_constraintBottom_toBottomOf="@id/textViewClientNumber"
+        app:layout_constraintLeft_toRightOf="@id/editTextClientNumber"/>
+
+    <TextView
+        android:id="@+id/textViewPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza : "
+        app:layout_constraintTop_toBottomOf="@id/editTextClientNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textViewNbSlices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nb. Slices : "
+        app:layout_constraintTop_toBottomOf="@id/textViewPizza"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount : "
+        app:layout_constraintTop_toBottomOf="@id/textViewNbSlices"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
