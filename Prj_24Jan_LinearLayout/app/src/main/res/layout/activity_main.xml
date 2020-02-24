@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sport Preference"
+            android:textSize="40sp"
+            android:textColor="#E00DA4"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textSize="30sp"
+            android:textColor="#3F51B5"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="30sp"
+            android:background="#FAFBFD"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSportRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sport"
+            android:textSize="30sp"
+            android:textColor="#3F51B5"
+            android:layout_marginLeft="30dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgSport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginRight="30dp">
+
+            <RadioButton
+                android:id="@+id/rbSoccer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soccer"
+                android:textSize="30sp"
+                android:textColor="#F44336"/>
+
+            <RadioButton
+                android:id="@+id/rbHand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HandBall"
+                android:textSize="30sp"
+                android:textColor="#F44336"/>
+
+            <RadioButton
+                android:id="@+id/rbHockey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hockey"
+                android:textSize="30sp"
+                android:textColor="#F44336" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:layout_marginLeft="30dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>
