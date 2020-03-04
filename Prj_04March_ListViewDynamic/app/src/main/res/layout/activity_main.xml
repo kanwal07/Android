@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Enter Country Name"/>
+
+    <EditText
+        android:id="@+id/editTextCCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/editTextCName"
+        app:layout_constraintStart_toStartOf="@id/editTextCName"
+        android:layout_marginTop="30dp"
+        android:hint="Enter the Capital"/>
+
+    <ListView
+        android:id="@+id/listViewCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextCCapital"
+        app:layout_constraintStart_toStartOf="@id/editTextCName"
+        android:layout_marginTop="30dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@id/listViewCountries"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintBottom_toBottomOf="@id/btnAdd"
+        app:layout_constraintLeft_toRightOf="@id/btnAdd"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintBottom_toBottomOf="@id/btnAdd"
+        app:layout_constraintLeft_toRightOf="@id/btnUpdate"
+        android:textAllCaps="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
