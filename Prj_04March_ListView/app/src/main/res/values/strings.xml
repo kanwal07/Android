@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prj_04March_ListView</string>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+    </string-array>
+</resources>
