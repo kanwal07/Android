@@ -1,0 +1,4 @@
+Canada,Ottawa
+Algeria,Algiers
+India,New Delhi
+Spain,Madrid
