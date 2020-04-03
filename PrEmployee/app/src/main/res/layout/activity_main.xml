@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewManageEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Employees"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewManageEmp"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:hint="Enter Id"
+        app:layout_constraintLeft_toRightOf="@id/textViewId"
+        app:layout_constraintTop_toTopOf="@id/textViewManageEmp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewId"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:hint="Enter Salary"
+        app:layout_constraintLeft_toRightOf="@id/textViewSalary"
+        app:layout_constraintTop_toTopOf="@id/editTextId"
+        android:layout_marginTop="50dp"/>
+
+
+    <ListView
+        android:id="@+id/listViewEmployees"
+        android:listSelector="@drawable/listview_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewSalary"
+        app:layout_constraintStart_toStartOf="@id/textViewSalary"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        app:layout_constraintTop_toBottomOf="@id/listViewEmployees"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintTop_toTopOf="@id/btnLoad"
+        app:layout_constraintBottom_toBottomOf="@id/btnLoad"
+        app:layout_constraintLeft_toRightOf="@id/btnLoad"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        app:layout_constraintTop_toTopOf="@id/btnLoad"
+        app:layout_constraintBottom_toBottomOf="@id/btnLoad"
+        app:layout_constraintLeft_toRightOf="@id/btnUpdate"
+        android:textAllCaps="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
